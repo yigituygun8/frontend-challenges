@@ -1,6 +1,6 @@
 # Frontend Mentor Web Challenges
 
-This repository contains solutions to various Frontend Mentor web development challenges. Each project is organized in its own folder with source code, assets, and documentation.
+This repository contains solutions to various Frondtend Mentor web evelopment challenges. Each project is organized in its own folder with source code, assets, and documentation.
 
 ## Getting Started
 
@@ -12,11 +12,3 @@ This repository contains solutions to various Frontend Mentor web development ch
 
 - Each challenge is in a separate subfolder.
 - Common assets or utilities may be shared at the root level.
-
-## Contributing
-
-Feel free to submit pull requests for improvements or new solutions!
-
-## License
-
-This project is licensed under the MIT License.
