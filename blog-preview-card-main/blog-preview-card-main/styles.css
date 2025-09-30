@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*box-sizing controls how the browser calculates the total width and height of an element*/
+}
+
+body{
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: hsl(47, 88%, 63%);
+    margin: 0; /* Add this to remove default body margin */
+    padding: 0; /* Optional: remove default padding too */
+}
+
+p {
+    font-size: 16px;
+}
+
+
+.main{
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;    
+}
+
+.blog-card{
+    background-color: hsl(0, 0%, 100%); /* white */
+    border-radius: 20px;
+    box-shadow: 6px 6px 0px #000000;
+    border: 1px solid black;
+    max-width: 384px;
+    padding: 24px;
+    transition: box-shadow 0.3s ease;
+}
+
+.blog-card:hover{
+    box-shadow: 1rem 1rem 0px #000;
+}
+
+.blog-card .course-photo{ /* or simpler: .course-photo*/
+    width: 100%; /* Responsive! - adapts to container size */
+    height: auto; /* Maintains aspect ratio */
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.category p{
+    display: inline-block;
+    color: black; /* text color */
+    font-weight: 800;
+    background-color: hsl(47, 88%, 63%);
+    padding: 4px 12px; /* top and bottom | left and right */
+    border-radius: 4px;
+    margin-top: 12px;
+    margin-bottom: 12px ;
+    max-width: 100px;
+}
+
+.publish-date{
+    color: hsl(0, 0%, 7%);
+    font-weight: 500;
+}
+
+.description-section{
+    margin-top: 1.5rem
+}
+
+.title{
+    color: hsl(0, 0%, 7%);
+    font-weight: 800;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    margin-bottom: 0.75rem;
+}
+
+.title:hover{
+    color: hsl(47, 88%, 63%);
+}
+
+
+.description{
+    color: hsl(0, 0%, 42%);
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.author-section{
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-top: 0.75rem;
+}
+
+.author-avatar{
+    width: 2rem;
+    height: 2rem;
+    object-fit: cover;
+}
+
+.author{
+    font-weight: 800;
+}
+
+/* Responsive design */
+@media (max-width: 30rem) {
+  .blog-card {
+    padding: 1.25rem;
+    margin: 1.25rem;
+  }
+  
+  .title {
+    font-size: 1.25rem;
+  }
+  
+  .description {
+    font-size: 0.875rem;
+  }
+}
