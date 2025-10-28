@@ -120,3 +120,18 @@ nav ul li a:hover::before {
 .col a:active {
     border-style: solid;
 }
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none; /* Or create a mobile menu */
+    }
+    
+    .col {
+        flex-basis: 100%; /* Stack columns on mobile */
+    }
+    
+    .col h1 {
+        font-size: 1.8rem;
+        margin-top: 50px;
+    }
+}
