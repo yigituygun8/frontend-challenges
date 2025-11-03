@@ -155,6 +155,8 @@ body {
 
 .scroll-down i {
     display: inline-block; /* Needed for transform to work */
+    position: fixed;
+    bottom: 20px;
     font-size: 25px;
     color: white;
     padding: 12px;
